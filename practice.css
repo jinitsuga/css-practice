@@ -40,3 +40,32 @@ a:focus {
   background-color: #fff;
   color: #333;
 }
+.sliding-text {
+  animation: 3s slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.hover-btn {
+  margin-top: 50px;
+  font-size: 125%;
+  font-weight: 600;
+  width: 100px;
+  height: 65px;
+  border: solid 1px;
+  border-radius: 6px;
+  background-color: #1b597c;
+  color: white;
+  transition: all 0.5s ease-out;
+}
+.hover-btn:hover {
+  transform: scale(1.2);
+}
